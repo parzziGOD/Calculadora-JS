@@ -2,6 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 62.5%;
 }
 .container {
     display: flex;
@@ -10,4 +12,52 @@
     height: 100vh;
     padding: 1rem;
     
+}
+.calculator {
+    font-size: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 2px solid #2176FF;
+    border-radius:10px;
+}
+.calculator-display {
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    overflow-x: auto;
+}
+.calculator-keypad {
+    display: flex;
+    width: 100%;
+}
+.keypad-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%   ;
+}
+.keypad-btn {
+    width: 25%;
+    padding: 20px 10px;
+    text-align: center;
+    
+    background-color: #33A1FD;
+    border: 1px solid #2176FF;
+    border-radius: 5px;
+}
+.keypad-btn:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+
+.keypad-btn.yellow {
+    background-color: #FDCA40;
+}
+.keypad-btn.large {
+    width: 50%;
+}
+.keypad-btn.dark {
+    
+    background-color: #94e1fd;
 }
